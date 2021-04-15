@@ -2,12 +2,78 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-size: 15px;
 }
 section {
     display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    
 }
-div:first-child {
+div:first-of-type {
     background-color:  hsl(31, 77%, 52%);
 }
+div:nth-of-type(2) {
+    background-color: hsl(184, 100%, 22%);
+}
+div:nth-of-type(3) {
+    background-color: hsl(179, 100%, 13%);
+}
+.card {
+    color: white;
+    padding: 50px;
+    width: 320px;
+    height: 450px;
+}
+.card__image {
+    margin-bottom: 20px;
+}
+.card__title {
+    font-family:'Big Shoulders Display', cursive;
+    font-size: 40px;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+}
+.card__desc {
+    font-family: 'Lexend Deca', sans-serif;
+    margin-bottom: 70px;
+    line-height: 25px;
+}
+#sedans__btn {
+    color: hsl(31, 77%, 52%);
+}
+#sedans__btn:hover {
+    border: 1px solid white;
+    color: white;
+    cursor: pointer;
+    background-color: hsl(31, 77%, 52%);
+}
+#suvs__btn {
+    color: hsl(184, 100%, 22%);
+}
+#suvs__btn:hover {
+    border: 1px solid white;
+    color: white;
+    cursor: pointer;
+    background-color: hsl(184, 100%, 22%);
+}
+#luxurys__btn {
+    color: hsl(179, 100%, 13%);
+}
+#luxurys__btn:hover {
+    border: 1px solid white;
+    color: white;
+    cursor: pointer;
+    background-color: hsl(179, 100%, 13%);
+}
+.card__btn {
+    border: 1px solid white;
+    border-radius: 20px;
+    padding: 10px 15px;
+    background-color: white;
+    color: black;
+    font-family: 'Lexend Deca', sans-serif;
+}
+
 .attribution { font-size: 11px; text-align: center; }
 .attribution a { color: hsl(228, 45%, 44%); }
